@@ -1,0 +1,2 @@
+data_serial_num,train_serial_num,test_accuracy,test_f1_score,test_precision,test_auroc,best_epoch,learning_rate
+91sxb3z,LGBM2jtylt1,0.5,0.6214689265536723,0.45267489711934156,0.8747346072186836,2722.0,0.0001

@@ -1,0 +1,29 @@
+DATA:
+    data_SN: 91sxb3z
+    use_features: ['Pclass', 'Sex', 'Embarked', 'Title', 'FsizeD', 'Child', 'Age', 'SibSp', 'Parch', 'Fare', 'Family_Size']
+    cat_features: ['Pclass','Sex', 'Embarked', 'Title', 'FsizeD', 'Child']
+        
+MODEL:
+    model_nm: LGBM
+        
+TRAIN:
+    seed: 42
+    parameters:
+        objective: 'binary'
+        boosting: 'gbdt'
+        metric: 'auc'
+        num_boost_round: 5000
+        num_leaves: 163
+        min_data_in_leaf: 28
+        max_depth: 37
+        # feature_fraction: 
+        # bagging_fraction:
+        # bagging_freq:
+        # learning_rate:
+        # scale_pos_weight:
+        # early_stopping_round:
+        verbose: -1
+    optuna:
+        use: False
+        trials: 15
+

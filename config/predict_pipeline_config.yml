@@ -1,0 +1,7 @@
+seed: 42
+TRAIN:
+    train_SN: LGBM2jtylt1
+MODEL:
+    model_nm: 'LGBM'
+PREDICT:
+    threshold: 0.3
